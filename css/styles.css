@@ -1,0 +1,295 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #2c4d42;
+  background: #ece8ea;
+}
+
+h1 {
+  color: rgba(45, 43, 48, 0.95);
+  text-transform: uppercase;
+  padding-top: 50px;
+  font-size: 3em;
+  margin: 0;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #781125;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: underline;
+  color: #021630;
+  transition: all .5s;
+}
+
+a:hover {
+  color: #024090;
+  font-size: 1.5em;
+}
+
+.nav li a {
+  color: #C5C5C5;
+  text-decoration: none;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: rgba(45, 43, 48, 0.95);
+  min-height: 55px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.nav li {
+  padding: 5px 10px 0 10px;
+}
+
+.nav a {
+  transition: all .5s;
+}
+
+.nav a:hover {
+  color: white;
+  font-size: 1.2em;
+}
+
+header {
+  text-align: center;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  height: 350px;
+}
+
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+.name{
+  font-weight: 300;
+}
+
+header .name{
+  font-size: 3em;
+}
+
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #781125
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  border-top: 4px solid #781125;
+  clear: both;
+}
+
+.card:hover {
+  border-color: rgba(45, 43, 48, 0.95);
+}
+
+
+.photo{
+  display: block;
+  width: 200px;
+  height: 0;
+  margin: 0 auto;
+}
+
+.information{
+  width: 100%;
+  text-align: center;
+  /*display: inline-block;
+  position: absolute;*/
+}
+
+.heading {
+  font-size: 1.65em;
+  color: #781125;
+  margin-top: 20px;
+}
+
+/* Footer styles */
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .7;
+  transition: all .5s;
+}
+
+.twitter {
+  background-image: url(../img/twitter-32.png);
+}
+
+.youtube {
+  background-image: url(../img/youtube-32.png);
+}
+
+.spotify {
+  background-image: url(../img/spotify-32.png);
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+.clearfix {
+  clear: both;
+}
+
+footer {
+  background-color: rgba(45, 43, 48, 0.95);
+  margin: 0;
+}
+
+.copyright {
+  color: #C5C5C5;
+}
+
+.social img {
+  background-color: transparent;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+
+  .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    padding-top: 90px;
+  }
+
+  .heading {
+    font-size: 2em;
+    margin-top: 40px;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav a:hover {
+    font-size: 1.5em;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p, label {
+    line-height: 1.6em;
+    font-size: 1.25em;
+  }
+
+  .card {
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    width: 80%;
+    max-width: 1000px;
+  }
+
+  .photo{
+    width: 30%;
+    margin: 20px 30px;
+  }
+
+  .information{
+    text-align: left;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .main-nav {
+    min-height: 60px;
+  }
+
+  .copyright:hover {
+    font-size: 1.15em;
+  }
+
+  .copyright {
+    transition: all .5s;
+  }
+}
