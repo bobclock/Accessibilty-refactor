@@ -32,35 +32,40 @@
                 <legend>
                   Who is your favorite band member:
                 </legend>
-                <input type="radio" name="res" value="John"> John
-                <input type="radio" name="res" value="Hazzard"> Hazzard
-                <input type="radio" name="res" value="Bob"> Bob
-                <input type="radio" name="res" value="Sally"> Sally
+                <input type="radio" name="res" id="John" value="John"><label for="John">John</label>
+                <input type="radio" name="res" id="Hazzard" value="Hazzard"><label for="John">Hazzard</label>
+                <input type="radio" name="res" id="Bob" value="Bob"><label for="John">Bob</label>
+                <input type="radio" name="res" id="Sally" value="Sally"><label for="John">Sally</label>
               </fieldset>
-              <label for="albums">What is your favorite album:</label>
-              <select id="albums" name="select">
-                <optgroup label="A-E">
-                  <option value="1">A Day Of Old </option>
-                  <option value="2">Diamond Fireworks</option>
-                  <option value="3">Enjoy Your Desire</option>
-                </optgroup>
-                <optgroup label="F-L">
-                  <option value="4">Finding My Shadow</option>
-                  <option value="5">Heroic Forever</option>
-                </optgroup>
-                <optgroup label="M-R">
-                  <option value="6">Midnight Fires</option>
-                  <option value="7">Music Of My Life</option>
-                  <option value="8">Party For An Angel</option>
-                </optgroup>
-                <optgroup label="S-Z">
-                  <option value="9">Song For Yesterday</option>
-                  <option value="10">Street Of The Rider</option>
-                  <option value="11">This Is For You</option>
-                </optgroup>
-              </select>
-              <label for="song">What is your favorite song:</label>
+              <fieldset>
+                <legend class="hide">
+                    Form to select your favourite album and song
+                </legend>
+                  <label for="albums">What is your favorite album:</label>
+                  <select id="albums" name="select">
+                    <optgroup label="A-E">
+                      <option value="1">A Day Of Old </option>
+                      <option value="2">Diamond Fireworks</option>
+                      <option value="3">Enjoy Your Desire</option>
+                    </optgroup>
+                    <optgroup label="F-L">
+                      <option value="4">Finding My Shadow</option>
+                      <option value="5">Heroic Forever</option>
+                    </optgroup>
+                    <optgroup label="M-R">
+                      <option value="6">Midnight Fires</option>
+                      <option value="7">Music Of My Life</option>
+                      <option value="8">Party For An Angel</option>
+                    </optgroup>
+                    <optgroup label="S-Z">
+                      <option value="9">Song For Yesterday</option>
+                      <option value="10">Street Of The Rider</option>
+                      <option value="11">This Is For You</option>
+                    </optgroup>
+                  </select>
+                  <label for="song">What is your favorite song:</label>
               <textarea id="song" placeholder="Write fav song here"></textarea>
+            </fieldset>
             </form>
           </div>
         </div>
@@ -71,14 +76,21 @@
           <img class="photo" src="img/the_band.jpg" alt="Image of the Soul of the Frog band playing a live gig">
             <div class="container" role="form">
               <form class="newsletter">
-                <label for="name">Name:</label>
-                <input id="name" type="text" name="textfield">
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="textfield">
-                <label for="second_email">Retype Email:</label>
-                <input id="second_email" type="email" name="textfield" aria-describedby="newpass">
-                <span id="newpass">This email address must exactly match the first typing of the email</span>
-                <button type="submit">Sign Up</button>
+                <fieldset>
+                  <legend class="hide">
+                      Form to allow sign up to the newsletter
+                  </legend>
+                    <label for="name" class="left">Name:</label>
+                    <input id="name" type="text" name="textfield">
+                    <label for="email" class="left">Email:</label>
+                    <input id="email" type="email" name="textfield">
+                    <label for="second_email" class="left">Retype Email:</label>
+                    <input id="second_email" type="email" name="textfield" aria-describedby="newpass">
+                    <span id="newpass">This email address must exactly match the first typing of the email</span>
+                    <button type="submit">Sign Up</button>
+
+
+                </fieldset>
               </form>
             </div>
         </div>

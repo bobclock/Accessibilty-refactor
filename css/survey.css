@@ -79,8 +79,11 @@ button:hover {
 }
 
 label {
-  float: left;
   text-align: left;
+}
+
+.left {
+  float: left;
 }
 
 .container{
@@ -112,11 +115,15 @@ span {
   }
 
   fieldset {
-    font-size: 1.25em;
+    font-size: 24px;
   }
 
   .survey {
     padding: 20px 40px 40px;
+  }
+
+  label {
+    font-size: 1em;
   }
 
 

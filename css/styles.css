@@ -144,7 +144,7 @@ header .name{
   position: absolute;*/
 }
 
-.heading {
+h3 {
   font-size: 1.65em;
   color: #781125;
   margin-top: 20px;
@@ -216,6 +216,10 @@ footer {
   background-color: transparent;
 }
 
+.hide {
+  display: none;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
 
@@ -231,7 +235,7 @@ footer {
     padding-top: 90px;
   }
 
-  .heading {
+  h3 {
     font-size: 2em;
     margin-top: 40px;
   }
