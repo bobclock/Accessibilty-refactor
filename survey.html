@@ -42,6 +42,7 @@
                     Form to select your favourite album and song
                 </legend>
                   <label for="albums">What is your favorite album:</label>
+                  
                   <select id="albums" name="select">
                     <optgroup label="A-E">
                       <option value="1">A Day Of Old </option>
@@ -64,7 +65,7 @@
                     </optgroup>
                   </select>
                   <label for="song">What is your favorite song:</label>
-              <textarea id="song" placeholder="Write fav song here"></textarea>
+                  <textarea id="song" placeholder="Write fav song here"></textarea>
             </fieldset>
             </form>
           </div>
@@ -81,12 +82,14 @@
                       Form to allow sign up to the newsletter
                   </legend>
                     <label for="name" class="left">Name:</label>
-                    <input id="name" type="text" name="textfield">
+                    <input id="name" type="text" name="textfield" aria-describedby="names">
+                    <span id="names">Please enter your name so we can address the newsletter to you</span>
                     <label for="email" class="left">Email:</label>
-                    <input id="email" type="email" name="textfield">
+                    <input id="email" type="email" name="textfield" aria-describedby="email1">
+                    <span id="email1">Please enter your email address so we know where to send the newsletter to you</span>
                     <label for="second_email" class="left">Retype Email:</label>
-                    <input id="second_email" type="email" name="textfield" aria-describedby="newpass">
-                    <span id="newpass">This email address must exactly match the first typing of the email</span>
+                    <input id="second_email" type="email" name="textfield" aria-describedby="email2">
+                    <span id="email2">This email address must exactly match the first typing of the email</span>
                     <button type="submit">Sign Up</button>
 
 

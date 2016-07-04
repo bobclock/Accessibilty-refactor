@@ -126,5 +126,10 @@ span {
     font-size: 1em;
   }
 
-
+  #name:focus + #names,
+  #email:focus + #email1,
+  #second_email:focus + #email2 {
+    color: red;
+    display: inline;
+  }
 }
